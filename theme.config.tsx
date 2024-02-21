@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { MendableSearchBar } from '@mendable/search'
 
 const config: DocsThemeConfig = {
   logo: <span>My Project</span>,
@@ -13,6 +14,8 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
+  search: {component:<div><MendableSearchBar anon_key="" showSimpleSearch /></div>},
+
 }
 
 export default config
